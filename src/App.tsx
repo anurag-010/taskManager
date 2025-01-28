@@ -1,12 +1,15 @@
 
-import Navbar from './components/Navbar/Navbar'
-import TaskList from './components/TaskList/TaskList'
+// import Navbar from './components/Navbar/Navbar'
+// import TaskList from './components/TaskList/TaskList'
 
+import TaskForm from './components/TaskForm/TaskForm'
 const App = () => {
   return (
     <div>
-    <Navbar/>
-    <TaskList/>
+    {/* <Navbar/>
+    <TaskList/> */}
+    <TaskForm/>
+     
     </div>
   )
 }

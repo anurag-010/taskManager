@@ -125,6 +125,10 @@ const TaskList = () => {
       task.title.toLowerCase().includes(searchKeyword.toLowerCase()) ||
       task.description.toLowerCase().includes(searchKeyword.toLowerCase())
   );
+  // delete logic
+  const deleteTask = (id: number) => {
+    setTaskList((prevState) => prevState.filter((task) => task.id !== id));
+  };
 
   return (
     <div className="p-4">
@@ -243,6 +247,13 @@ const TaskList = () => {
                 Edit Description
               </button>
             )}
+            <button
+              className="border-2 cursor-pointer mt-2 p-2 bg-red-500 text-white rounded"
+              onClick={() => deleteTask(task.id)}
+            >
+              Delete Task
+            </button>
+            
           </div>
         ))}
       </section>
