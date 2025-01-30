@@ -1,10 +1,8 @@
 
-
 interface NavElement {
   label: string;
   href: string;
 }
-
 const Navbar = () => {
   const navElements: NavElement[] = [
     { label: "Home", href: "/" },
